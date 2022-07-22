@@ -5,9 +5,17 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
+<h1><%= "Welcome to Market!" %>
 </h1>
 <br/>
-<a href="hello-servlet">Hello Servlet</a>
+
+<div style="text-align: center">
+    <a href="${pageContext.request.contextPath}/" style="font-size: 20px;"></a>
+    <a href="${pageContext.request.contextPath}/guest?command=listUsers" style="font-size: 20px;">List Users</a>
+    <a href="${pageContext.request.contextPath}/listProducts" style="font-size: 20px;">List Products</a>
+    <a href="${pageContext.request.contextPath}/login" style="font-size: 20px;">Login</a>
+
+</div>
+
 </body>
 </html>
