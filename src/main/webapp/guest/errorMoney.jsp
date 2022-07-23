@@ -31,25 +31,7 @@
 
 </div>
 
-<form align="center" method="post" action="${pageContext.request.contextPath}/guest?command=buy">
-<br/>
-    <div class="container">
-        <%--@declare id="UserId"--%><%--@declare id="ProductId"--%>
-        <h3><p>For buy product please enter your UserId (from 1-3) and ProductId (from 1-3)</p></h3>
-        <label for="UserId"><b>UserID</b></label>
-        <input type="text" placeholder="Enter UserId" name="userId" required>
-
-            <p style="color:red;">${userIdNotValidateMessage}</p
-        <br><br>
-        <label for="ProductId"><b>ProductId</b></label>
-        <input type="ProductId" placeholder="Enter ProductId" name="productId" required>
-
-            <p style="color:red;">${productIdNotValidateMessage}</p
-        <br><br>
-        <button type="Buy">Buy</button>
-
-    </div>
-</form>
+<h2><p align="center">You don't have enough money!</p></h2>
 
 </body>
 </html>

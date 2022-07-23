@@ -9,9 +9,6 @@ public class CommandListUsers implements Command {
     @Override
     public String execute(HttpServletRequest request) {
         String command = request.getParameter("command");
-
-        System.out.println("bingo");
-        return "redirect:" + Path.LIST_USERS;
-
+        return "redirect:" + Path.LIST_USERS ;
     }
 }

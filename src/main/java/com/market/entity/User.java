@@ -4,23 +4,23 @@ import java.util.UUID;
 
 public class User {
 
-    private UUID id;
+    private int id;
     private String firstName;
     private String lastName;
     private Double money;
 
-    public User(UUID id, String firstName, String lastName, Double money) {
+    public User(int id, String firstName, String lastName, Double money) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.money = money;
     }
 
-    public UUID getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(int id) {
         this.id = id;
     }
 

@@ -4,21 +4,21 @@ import java.util.UUID;
 
 public class Product {
 
-    private UUID id;
+    private int id;
     private String name;
     private Double price;
 
-    public Product(UUID id, String name, Double price) {
+    public Product(int id, String name, Double price) {
         this.id = id;
         this.name = name;
         this.price = price;
     }
 
-    public UUID getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(int id) {
         this.id = id;
     }
 
