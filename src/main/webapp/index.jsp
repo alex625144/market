@@ -27,11 +27,12 @@
     <a href="${pageContext.request.contextPath}/index.jsp" style="font-size: 20px;">Home</a>
     <a href="${pageContext.request.contextPath}/guest?command=listUsers" style="font-size: 20px;">List Users</a>
     <a href="${pageContext.request.contextPath}/guest?command=listProducts" style="font-size: 20px;">List Products</a>
-
+    <a href="${pageContext.request.contextPath}/guest?command=buy&list=user_id" style="font-size: 20px;">List Users by UserID</a>
+    <a href="${pageContext.request.contextPath}/guest?command=buy&list=product_id" style="font-size: 20px;">List Users by ProductID</a>
 
 </div>
 
-<form align="center" method="post" action="${pageContext.request.contextPath}/guest?command=buy">
+<form align="center" method="post" action="${pageContext.request.contextPath}/guest?command=buy&list=0">
 <br/>
     <div class="container">
         <%--@declare id="UserId"--%><%--@declare id="ProductId"--%>
